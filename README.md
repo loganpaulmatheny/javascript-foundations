@@ -54,7 +54,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [x] 💵 [Vending Machine](./dollar-store-vending-machine/)
 - [x] 🛗 [Elevator](./elevator/)
 - [x] 📚 [Library](./library)
-- [ ] 🌮 [Taco Stand](./tacoStand/)
+- [x] 🌮 [Taco Stand](./tacoStand/)
 - [ ] 🧶 [Crafting](./crafting/)
 - [ ] ✂️ [Barber Shop](./barber-shop/)
 - [ ] 🥗 [Meal Planning](./meal-planning/)
