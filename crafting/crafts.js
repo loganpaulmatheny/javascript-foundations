@@ -33,11 +33,31 @@ function addSupply(closet, craftMaterial) {
   }
   return `You already have ${craftMaterial.name} in your closet!`;
 }
+
+function createNewProject(materials, status = "not started") {
+  var project = {
+    materialsNeeded: materials,
+    status: status,
+  };
+  return project;
+}
+
+function compareMaterials(project, closet) {
+  for (let i = 0; i < project.materialsNeeded.length; i++) {
+    if (closet.supplies.includes(project.materialsNeeded[i].name) === true) {
+      console.log(`found ${project.materialsNeeded[i].name}`);
+    } else {
+      return `Oh no! You need to go shopping before you can start this project!`;
+    }
+  }
+  return `Yay! You can start this project!`;
+}
+
 module.exports = {
   createMaterial,
   calculateMaterialCost,
   createSupplyCloset,
   addSupply,
-  // createNewProject,
-  // compareMaterials
+  createNewProject,
+  compareMaterials,
 };
