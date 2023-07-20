@@ -51,9 +51,57 @@ function checkAirlineLocations(airportsArr, airline) {
   return foundAirports;
 }
 
-module.exports = {
-  createAirport,
-  welcomeGuests,
-  landPlanes,
-  checkAirlineLocations,
-};
+// // ===== ROUND 2 =====
+// function createAirport(name, airlines, gates) {
+//   var airport = {
+//     name: name,
+//     airlines: airlines,
+//     availableGates: gates,
+//   };
+//   return airport;
+// }
+
+// function welcomeGuests(airport) {
+//   return `Welcome to ${airport.name}!`;
+// }
+
+// function landPlanes(airport, planesLanded) {
+//   if (airport.availableGates - planesLanded >= 0) {
+//     var openGates = airport.availableGates - planesLanded;
+//     airport.availableGates = openGates;
+//     airport.message = `Success! Current availability is ${airport.availableGates}.`;
+//     return airport;
+//   } else {
+//     var overflow = airport.availableGates - planesLanded;
+//     airport.availableGates = 0;
+//     airport.message = `Oh no! Not enough gates available. Current overflow is ${
+//       overflow * -1
+//     }.`;
+//     return airport;
+//   }
+// }
+
+// function checkAirlineLocations(airports, airline) {
+//   // return array of airport names that carrier flies to
+//   // compare the airlines (array) within aiport within airport array
+//   // loop through aiports array
+//   // look at airport array
+//   // is the airline within the array? - if yes push it to airport carries
+//   var carriers = [];
+//   for (let i = 0; i < airports.length; i++) {
+//     for (let j = 0; j < airports[i].airlines.length; j++) {
+//       if (airports[i].airlines[j] === airline) {
+//         // console.log(`found airline at ${airports[i].name}`);
+//         carriers.push(airports[i].name);
+//       }
+//     }
+//   }
+//   return carriers;
+// }
+
+// module.exports = {
+//   createAirport,
+//   welcomeGuests,
+//   landPlanes,
+//   checkAirlineLocations,
+// };
